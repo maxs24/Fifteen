@@ -39,7 +39,7 @@ class PlayingField:
         number = 1
         for i in range(1, self.BOARD_SIZE + 1):
             for j in range(1, self.BOARD_SIZE + 1):
-                if self.fields[(i, j)] != number:
+                if self.fields[(i, j)] != number and number != self.BOARD_SIZE ** 2:
                     return False
                 else:
                     number += 1
